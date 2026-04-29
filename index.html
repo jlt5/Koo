@@ -1,0 +1,53 @@
+<!-- ========================= index.html ========================= -->
+<!DOCTYPE html>
+<html lang="om">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuula Multimedia Bareedaa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="fade-in">
+  <h1>Baga Nagaan Dhuftan</h1>
+  <p>Text, Suuraa, Muuziqaa fi Video waliin</p>
+</header>
+
+<div class="container">
+  <!-- TEXT -->
+  <section class="card slide-up">
+    <h2>Barreeffama</h2>
+    <p id="text">Kun barreeffama fakkeenyaati.</p>
+    <button onclick="changeText()">Jijjiiri</button>
+  </section>
+
+  <!-- IMAGES -->
+  <section class="card slide-up">
+    <h2>Suuraalee</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/300/200?1" onclick="playMusic()">
+      <img src="https://picsum.photos/300/200?2" onclick="playMusic()">
+      <img src="https://picsum.photos/300/200?3" onclick="playMusic()">
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="card slide-up">
+    <h2>Muuziqaa</h2>
+    <audio id="audio" src="Hachalu_Hundessa__Jirra____NEW____2017_Oromo_Music.mp3"></audio>
+    <button onclick="toggleMusic()">Play / Pause</button>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="card slide-up">
+    <h2>Video</h2>
+    <video width="100%" controls>
+      <source src="Eshetu Etana - Maali Mallikoo- New Ethiopian Afan Oromo Music Video 2025 ( Offic.mp4" type="video/mp4">
+    </video>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
